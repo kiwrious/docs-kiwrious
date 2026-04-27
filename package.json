@@ -1,0 +1,21 @@
+{
+  "name": "kiwrious-sdk-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Developer documentation for the Kiwrious USB serial sensor SDK — modern static site with sidebar navigation, syntax highlighting, and copy-to-clipboard code snippets. Includes mirrored markdown for AI consumption.",
+  "scripts": {
+    "serve": "npx --yes http-server . -p 8080 -c-1 --cors -s",
+    "serve:py": "python3 -m http.server 8080",
+    "open": "open http://localhost:8080",
+    "dev": "npx --yes http-server . -p 8080 -c-1 --cors"
+  },
+  "keywords": [
+    "kiwrious",
+    "sdk",
+    "documentation",
+    "web-serial",
+    "sensors",
+    "usb"
+  ],
+  "license": "MIT"
+}

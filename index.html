@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kiwrious SDK — Developer Documentation</title>
+<meta name="description" content="Complete developer documentation for the Kiwrious USB serial sensor SDK." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<header class="appbar">
+  <button class="appbar__menu" id="menu-toggle" aria-label="Toggle navigation">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <div class="appbar__brand">
+    <div class="appbar__logo">K</div>
+    <div>
+      <div class="appbar__title">Kiwrious SDK</div>
+      <div class="appbar__subtitle">Developer Documentation</div>
+    </div>
+  </div>
+  <div class="appbar__spacer"></div>
+  <div class="appbar__version" id="version-pill">v2.0.0</div>
+  <a class="appbar__link" href="https://github.com/" target="_blank" rel="noopener">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.96 10.96 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.13v3.16c0 .31.21.67.8.56C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+    GitHub
+  </a>
+</header>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <nav class="nav">
+
+      <div class="nav__group">
+        <div class="nav__heading">Getting Started</div>
+        <a class="nav__link" data-route="home">Overview</a>
+        <a class="nav__link" data-route="installation">Installation</a>
+        <a class="nav__link" data-route="quickstart">Quickstart</a>
+        <a class="nav__link" data-route="examples/basic">Basic example</a>
+      </div>
+
+      <div class="nav__group">
+        <div class="nav__heading">Protocol</div>
+        <a class="nav__link" data-route="protocol/usb-connection">USB connection</a>
+        <a class="nav__link" data-route="protocol/frame-format">26-byte frame format</a>
+        <a class="nav__link" data-route="protocol/sensor-types">Sensor type IDs</a>
+        <a class="nav__link" data-route="protocol/firmware-versions">Firmware versions</a>
+      </div>
+
+      <div class="nav__group">
+        <div class="nav__heading">API Reference</div>
+        <a class="nav__link" data-route="api/serial-service">SerialService</a>
+        <a class="nav__link" data-route="api/callbacks">Event callbacks</a>
+        <a class="nav__link" data-route="api/interfaces">Data interfaces</a>
+        <a class="nav__link" data-route="api/enums">Status enums</a>
+      </div>
+
+      <div class="nav__group">
+        <div class="nav__heading">Sensors</div>
+        <a class="nav__link" data-route="sensors/uv">UV / Light</a>
+        <a class="nav__link" data-route="sensors/humidity">Humidity / Climate</a>
+        <a class="nav__link" data-route="sensors/temperature">Temperature (IR)</a>
+        <a class="nav__link" data-route="sensors/conductivity">Conductivity</a>
+        <a class="nav__link" data-route="sensors/voc">Air quality (VOC)</a>
+        <a class="nav__link" data-route="sensors/heart-rate">Heart rate</a>
+      </div>
+
+      <div class="nav__group">
+        <div class="nav__heading">Advanced</div>
+        <a class="nav__link" data-route="advanced/heart-rate-emulation">ARM emulator pipeline</a>
+        <a class="nav__link" data-route="advanced/dsp-pipeline">DSP &amp; FFT (HR v1)</a>
+        <a class="nav__link" data-route="advanced/disconnect-resume">Disconnect &amp; resume</a>
+        <a class="nav__link" data-route="advanced/discrepancies">Cross-project discrepancies</a>
+      </div>
+
+      <div class="nav__group">
+        <div class="nav__heading">Examples</div>
+        <a class="nav__link" data-route="examples/vue">Vue integration</a>
+        <a class="nav__link" data-route="examples/scratch">Scratch (block) integration</a>
+        <a class="nav__link" data-route="examples/recording">Recording &amp; CSV export</a>
+      </div>
+
+    </nav>
+  </aside>
+
+  <main class="content" id="content">
+    <article id="article" class="article markdown-body">
+      <p class="loading">Loading documentation…</p>
+    </article>
+    <footer class="footer">
+      <span>Kiwrious SDK Docs</span>
+      <span class="footer__sep">•</span>
+      <span>Built for developers integrating Kiwrious USB sensors</span>
+    </footer>
+  </main>
+</div>
+
+<div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
