@@ -4,10 +4,10 @@
   "private": true,
   "description": "Developer documentation for the Kiwrious USB serial sensor SDK — modern static site with sidebar navigation, syntax highlighting, and copy-to-clipboard code snippets. Includes mirrored markdown for AI consumption.",
   "scripts": {
-    "serve": "npx --yes http-server . -p 8080 -c-1 --cors -s",
-    "serve:py": "python3 -m http.server 8080",
-    "open": "open http://localhost:8080",
-    "dev": "npx --yes http-server . -p 8080 -c-1 --cors"
+    "serve": "npx --yes http-server . -p 4711 -c-1 --cors -s",
+    "serve:py": "python3 -m http.server 4711",
+    "open": "open http://localhost:4711",
+    "dev": "npx --yes http-server . -p 4711 -c-1 --cors"
   },
   "keywords": [
     "kiwrious",

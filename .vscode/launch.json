@@ -5,7 +5,7 @@
       "name": "Open Kiwrious SDK Docs in Chrome",
       "type": "chrome",
       "request": "launch",
-      "url": "http://localhost:8080",
+      "url": "http://localhost:4711",
       "webRoot": "${workspaceFolder}",
       "preLaunchTask": "Serve docs (http-server)"
     },
@@ -13,7 +13,7 @@
       "name": "Open Kiwrious SDK Docs in Edge",
       "type": "msedge",
       "request": "launch",
-      "url": "http://localhost:8080",
+      "url": "http://localhost:4711",
       "webRoot": "${workspaceFolder}",
       "preLaunchTask": "Serve docs (http-server)"
     }

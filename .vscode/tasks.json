@@ -4,7 +4,7 @@
     {
       "label": "Serve docs (http-server)",
       "type": "shell",
-      "command": "npx --yes http-server . -p 8080 -c-1 --cors",
+      "command": "npx --yes http-server . -p 4711 -c-1 --cors",
       "isBackground": true,
       "problemMatcher": [
         {
@@ -26,7 +26,7 @@
     {
       "label": "Serve docs (Python)",
       "type": "shell",
-      "command": "python3 -m http.server 8080",
+      "command": "python3 -m http.server 4711",
       "isBackground": true,
       "problemMatcher": [],
       "presentation": {
@@ -37,7 +37,7 @@
     {
       "label": "Open docs in browser",
       "type": "shell",
-      "command": "open http://localhost:8080",
+      "command": "open http://localhost:4711",
       "problemMatcher": []
     }
   ]
